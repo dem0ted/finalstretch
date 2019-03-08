@@ -35,7 +35,6 @@ else:
     print("Invalid CIDR")
 
 if cidr in first:
-    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetone:
             start = i 
@@ -49,7 +48,6 @@ if cidr in first:
                     ip = '%d.%d.%d.%d' % (i,j,k,l)
                     test.append(ip)
 elif cidr in second:
-    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octettwo:
             start = i 
@@ -62,7 +60,6 @@ elif cidr in second:
                 ip = str(octetone) + '.' +'%d.%d.%d' % (i,j,k)
                 test.append(ip)
 elif cidr in third:
-    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetthree:
             start = i 
@@ -74,7 +71,6 @@ elif cidr in third:
             ip = str(octetone) + '.' + str(octettwo) + '.' + '%d.%d' % (i,j)
             test.append(ip)
 elif cidr in fourth:
-    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetfour:
             start = i 
