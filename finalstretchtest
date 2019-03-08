@@ -81,5 +81,7 @@ elif cidr in fourth:
         test.append(ip)
 
 for i in test[1:-1]:
-    os.system("ping" + " " + i )
+    os.system("ping -c 2 " + i )
     os.system("tracert" + " " + i )
+    os.system("traceroute" + " " + i)
+
