@@ -1,4 +1,4 @@
-iprange = input("What is your IP range(with CIDR)? ")
+iprange = '192.168.123.123/10'
 octets = iprange.split(".")
 split = octets[3].split("/")
 octetone = int(octets[0])
@@ -78,3 +78,7 @@ elif cidr in fourth:
     for i in list(range(start,end)):
         ip = str(octetone) + '.' + str(octettwo) + '.' + str(octetthree) + '.' + '%d' % (i)
         test.append(ip)
+
+for i in test[1:-1]:
+    os.system("ping" + " " + i )
+    os.system("tracert" + " " + i )
