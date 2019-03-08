@@ -1,0 +1,130 @@
+# Counting DNA Nucleotides
+dna = 'AGCCAAATGGACTAAGGGGCGTGGGAACCAGCTATAGGCTATATGCCCTTACTGTGGGGGAGGTGTGGTCTAGGTCGTGTCGTGCTGTCCTTCACACCCGTAGGGATTGCAAATGGCATCTCAATAATCCCCGGTTAGGTAACTTCCCATTTTGGCTAACGGAAAATGATTTTAACCCATTAGTGCGAACGCCAATGTCTTAGCTAGTCAGAGCTCCTCCGTAAATAAACAGCATGCTATTAAGCCCTCACGAGGAGTAAATGTTGGAGCCAATGTCGCAACGCACTTAATTCGACGTATTCTGGCTCAGAACCTTTTTGTCGTTCCCCCTTATGACTTTCTGGGCACCGGCGTACTGCTGTTCCCTCAACACCAAATCCTTGACCGAAGGCTGTTGAGTCAGTTAGATTATGGAGTCGAGACCTTTAAGTTAAACGGATTCAGGATCATGGGGGTGTGAGGCTGGGCTGCTGATCTTGTGTTAGTGGGGTCCCCGATCCTGTCACATAGCAGAGGTGATTTTTTTGTGGTGCTAGTTTTCAAGATCTTGGCTAAAAGACGGATAATATCTAAGCCAACAATCAGTTGGTACCTCCATGGGGCTTCGGTTCCTTTAACTTCCTTGTCGCGAGATTCAAACCTTCGGACGGGGACTAGTCCTATAGGTGACTTCATTTAGCTGACGTGACGGCGAATTCGCACGAGCATCGGTCAACCTCCCCACCCAGATAGTGCGGGGGAACTACGGACAGTCCCCTTTAAGTGCCCCCACATTAGCGTTAGTGTCATCAGCCCAGATTTGAACAGACTATCGTTACACGTTCGTAGTAGCAGCTGCAATCGGCGAACCTCATTGTCTGGGCATGTTAGCGTGGCCCAAGCTTCCCTCACACGCACGGCGGCGAGACTCTGCCCCAGTGAGTTCACGGATGAGCGGCCCTAGAGCA'
+count = [0,0,0,0]
+for c in dna:
+    if c == 'A':
+        count[0] += 1
+    elif c == 'C':
+        count[1] += 1
+    elif c == 'G':
+        count[2] += 1
+    elif c == 'T':
+        count[3] += 1
+ print(count[0], count[1], count[2], count[3])
+ 
+ #DNA to RNA
+ dna = 'GCCCTATCTACGGTCGCACTTCACCACATGATCAACAGCCCGCACACGCACGTCATATATATCCTACGGTTGATGTGGTAGTATGCTGATAGAATGCAGGCCGCTTGTAAGTTAAAACTGTTATCCGCGCGCGACGGTAGCGCTGTCCCTGCCTTCTAGTTACCCAAGCCCGCAGTCAGATCGGAATTACACTCCGGAGAGTGATCTGATTCAGACTCAGACGCTCTCCGATCGTAAAAGTCATACAGAGTCTGGCTGGCCGTGGTCGTGATACAATCTGCGAGCTGTTCGGAACCAAGTAATGATTGTGCTCGGTGAGTTCGCAACGTGTATACAAACAGCTTTTCTTTGTACAGGAGAGCTTGATCGGCGAACTGCACGTAGGACCCGGTTTGCCCTAACCCTCCACTTACGACCGTGTTTGAAGCGCGACCAATTCCACGACGCTAGGGAAGGGCTTGGTCCCTGGTGGCGGACCACCCCTTCCATAGTATGCCTTACTAAGTTGGCCTTAGCCGTACGCTACCCCATGCTTTCCGCCCGTTGTTTCTAGGTGTGACTGTGAGTCTATAGCGCAATTGTTCTTTGCGGCACGCGCTATATGTAACCAGTACCCAGCACACTAATGCGAATCTAGAGCGACCAAATATAGACCGTCTAGTTAGGAAGGAGTCCGGACCCCTGTCTGCCAGTCTTCGGGGAATGGGGTGTTTGCACGTCGACGGGAGGCCGATGCGTGAGCACACTATGGGCTGTCGTAGCACTATACGAGCCTAATTCAACAACACCTCTGACCGACAATGCGTTGCGCGTGCTCAATTAGAGGTTTTGAGTCTACCCCCTTCGTCCCGCGCGTACGACAAATGATGCGTCGCGACTAAACATTGTGCTCTTTTATATGCTGATCCGCTA'
+ blah = dna.replace('T','U')
+ blah
+ 
+ #Complementing DNA
+ dna = 'GCCCTATCTACGGTCGCACTTCACCACATGATCAACAGCCCGCACACGCACGTCATATATATCCTACGGTTGATGTGGTAGTATGCTGATAGAATGCAGGCCGCTTGTAAGTTAAAACTGTTATCCGCGCGCGACGGTAGCGCTGTCCCTGCCTTCTAGTTACCCAAGCCCGCAGTCAGATCGGAATTACACTCCGGAGAGTGATCTGATTCAGACTCAGACGCTCTCCGATCGTAAAAGTCATACAGAGTCTGGCTGGCCGTGGTCGTGATACAATCTGCGAGCTGTTCGGAACCAAGTAATGATTGTGCTCGGTGAGTTCGCAACGTGTATACAAACAGCTTTTCTTTGTACAGGAGAGCTTGATCGGCGAACTGCACGTAGGACCCGGTTTGCCCTAACCCTCCACTTACGACCGTGTTTGAAGCGCGACCAATTCCACGACGCTAGGGAAGGGCTTGGTCCCTGGTGGCGGACCACCCCTTCCATAGTATGCCTTACTAAGTTGGCCTTAGCCGTACGCTACCCCATGCTTTCCGCCCGTTGTTTCTAGGTGTGACTGTGAGTCTATAGCGCAATTGTTCTTTGCGGCACGCGCTATATGTAACCAGTACCCAGCACACTAATGCGAATCTAGAGCGACCAAATATAGACCGTCTAGTTAGGAAGGAGTCCGGACCCCTGTCTGCCAGTCTTCGGGGAATGGGGTGTTTGCACGTCGACGGGAGGCCGATGCGTGAGCACACTATGGGCTGTCGTAGCACTATACGAGCCTAATTCAACAACACCTCTGACCGACAATGCGTTGCGCGTGCTCAATTAGAGGTTTTGAGTCTACCCCCTTCGTCCCGCGCGTACGACAAATGATGCGTCGCGACTAAACATTGTGCTCTTTTATATGCTGATCCGCTA'
+ rna = ''
+ for i in dna:
+    if c == 'A'
+        rna = 'T' + rna
+    if c == 'C'
+        rna = 'G' + rna
+    if c == 'G'
+        rna = 'C' + rna
+    if c == 'T'
+        rna = 'A' + rna
+ rev
+ 
+ #Rabbits
+ x,y = 31,5
+
+ a,b = 0,1
+ for i in xrange(1,x):
+    a,b = b,y*a+b
+ b
+
+#ICMP OS fingerprint
+
+iprange = '192.168.123.123/10'  #works with any ip range
+octets = iprange.split(".")
+split = octets[3].split("/")
+octetone = int(octets[0])
+octettwo = int(octets[1])
+octetthree = int(octets[2])
+octetfour = int(split[0])
+cidr = int(split[1])
+actualmax = list(range(0,257))
+fakemax = list(range(0,256))
+first = list(range(1,9))
+second = list(range(9,17))
+third = list(range(17,25))
+fourth = list(range(15,33))
+test = []
+import os
+if cidr == 32 or cidr == 24 or cidr == 16 or cidr == 8:
+    cidrrange = 1
+elif cidr == 31 or cidr == 23 or cidr == 15 or cidr == 7:
+    cidrrange = 2
+elif cidr == 30 or cidr == 22 or cidr == 14 or cidr == 6:
+    cidrrange = 4
+elif cidr == 29 or cidr == 21 or cidr == 13 or cidr == 5:
+    cidrrange = 8
+elif cidr == 28 or cidr == 20 or cidr == 12 or cidr == 4:
+    cidrrange = 16
+elif cidr == 27 or cidr == 19 or cidr == 11 or cidr == 3:
+    cidrrange = 32
+elif cidr == 26 or cidr == 18 or cidr == 10 or cidr == 2:
+    cidrrange = 64
+elif cidr == 25 or cidr == 17 or cidr == 9 or cidr == 1:
+    cidrrange = 128
+else:
+    print("Invalid CIDR")
+
+if cidr in first:
+    for i in actualmax:
+        if i/cidrrange in actualmax and i <= octetone:
+            start = i 
+        elif i/cidrrange in actualmax and i > octetone:
+            end = i
+            break
+    for i in list(range(start,end)):
+        for j in fakemax:
+            for k in fakemax:
+                for l in fakemax:
+                    ip = '%d.%d.%d.%d' % (i,j,k,l)
+                    test.append(ip)
+elif cidr in second:
+    for i in actualmax:
+        if i/cidrrange in actualmax and i <= octettwo:
+            start = i 
+        elif i/cidrrange in actualmax and i > octettwo:
+            end = i
+            break
+    for i in list(range(start,end)):
+        for j in fakemax:
+            for k in fakemax:
+                ip = str(octetone) + '.' +'%d.%d.%d' % (i,j,k)
+                test.append(ip)
+elif cidr in third:
+    for i in actualmax:
+        if i/cidrrange in actualmax and i <= octetthree:
+            start = i 
+        elif i/cidrrange in actualmax and i > octetthree:
+            end = i
+            break
+    for i in list(range(start,end)):
+        for j in fakemax:
+            ip = str(octetone) + '.' + str(octettwo) + '.' + '%d.%d' % (i,j)
+            test.append(ip)
+elif cidr in fourth:
+    for i in actualmax:
+        if i/cidrrange in actualmax and i <= octetfour:
+            start = i 
+        elif i/cidrrange in actualmax and i > octetfour:
+            end = i
+            break
+    for i in list(range(start,end)):
+        ip = str(octetone) + '.' + str(octettwo) + '.' + str(octetthree) + '.' + '%d' % (i)
+        test.append(ip)
+
+for i in test[1:-1]:
+    os.system("ping -c 2 " + i )
+    os.system("tracert" + " " + i )
+    os.system("traceroute" + " " + i)
+
