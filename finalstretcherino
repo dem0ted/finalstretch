@@ -1,4 +1,5 @@
 iprange = '192.168.123.123/10'  #works with any ip range
+iprange = input("What is your IP range(with CIDR)? ")
 octets = iprange.split(".")
 split = octets[3].split("/")
 octetone = int(octets[0])
@@ -8,14 +9,14 @@ octetfour = int(split[0])
 cidr = int(split[1])
 actualmax = list(range(0,257))
 fakemax = list(range(0,256))
-first = list(range(1,9))
-second = list(range(9,17))
-third = list(range(17,25))
-fourth = list(range(15,33))
+first = list(range(1,8))
+second = list(range(8,16))
+third = list(range(16,24))
+fourth = list(range(24,32))
 test = []
 import os
-if cidr == 32 or cidr == 24 or cidr == 16 or cidr == 8:
-    cidrrange = 1
+if cidr == 24 or cidr == 16 or cidr == 8:
+    cidrrange = 256
 elif cidr == 31 or cidr == 23 or cidr == 15 or cidr == 7:
     cidrrange = 2
 elif cidr == 30 or cidr == 22 or cidr == 14 or cidr == 6:
@@ -34,6 +35,7 @@ else:
     print("Invalid CIDR")
 
 if cidr in first:
+    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetone:
             start = i 
@@ -47,6 +49,7 @@ if cidr in first:
                     ip = '%d.%d.%d.%d' % (i,j,k,l)
                     test.append(ip)
 elif cidr in second:
+    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octettwo:
             start = i 
@@ -59,6 +62,7 @@ elif cidr in second:
                 ip = str(octetone) + '.' +'%d.%d.%d' % (i,j,k)
                 test.append(ip)
 elif cidr in third:
+    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetthree:
             start = i 
@@ -70,6 +74,7 @@ elif cidr in third:
             ip = str(octetone) + '.' + str(octettwo) + '.' + '%d.%d' % (i,j)
             test.append(ip)
 elif cidr in fourth:
+    test.clear()
     for i in actualmax:
         if i/cidrrange in actualmax and i <= octetfour:
             start = i 
