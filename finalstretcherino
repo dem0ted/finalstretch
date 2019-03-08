@@ -1,5 +1,4 @@
 iprange = '192.168.123.123/10'  #works with any ip range
-iprange = input("What is your IP range(with CIDR)? ")
 octets = iprange.split(".")
 split = octets[3].split("/")
 octetone = int(octets[0])
