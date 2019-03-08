@@ -13,6 +13,7 @@ second = list(range(9,17))
 third = list(range(17,25))
 fourth = list(range(15,33))
 test = []
+import os
 if cidr == 32 or cidr == 24 or cidr == 16 or cidr == 8:
     cidrrange = 1
 elif cidr == 31 or cidr == 23 or cidr == 15 or cidr == 7:
