@@ -29,7 +29,7 @@ for c in dna:
         rna = 'C' + rna
     if c == 'T'
         rna = 'A' + rna
- rev
+ rna
  
  #Rabbits
  x,y = 31,5
